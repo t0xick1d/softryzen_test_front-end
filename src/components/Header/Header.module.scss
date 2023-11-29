@@ -1,0 +1,91 @@
+@import '../../vars.scss';
+ %display-start{
+  display: flex;
+ justify-content: flex-start;
+ } 
+
+.container { 
+ display: flex;
+ justify-content: space-between;
+}
+.logo{
+ width: 269px;
+ height: 40px;
+}
+.burgerMenuContainer{
+ @extend %display-center;
+ position: relative;
+ width: 40px;
+ height: 40px;
+ & svg{
+  width: 16px;
+  height: 16px;
+ }
+ 
+}
+.burgerMenuSvg{ 
+ width: 16px;
+ height: 16px;
+
+}
+.navMenu{ 
+ position: absolute;
+ top: 0px;
+ right: 0px;
+ width: 272px;
+ height: 568px;
+ padding: 24px;
+ background-color: rgba(23, 61, 51, 0.75);
+ border-radius: 15px;
+ backdrop-filter: blur(25px);
+
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+
+ ul{
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+ }
+ li{
+  @extend %display-start;
+  margin-bottom: 8px;
+  align-items: center;
+  a{ 
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  text-decoration: none;
+  text-align: start;
+
+  }
+  svg{ 
+   margin-left: 8px;
+   text-align: center;
+   width: 16px;
+   height: 16px;
+  }
+ }
+  .svgGroup{ 
+   @extend %display-start;
+   align-items: center;
+  svg{ 
+   width: 24px;
+   height: 24px;
+   margin-right: 8px;
+  }
+ }
+
+}
+.clouseContainer{ 
+ display: flex;
+ align-items: center;
+ border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+.clouseSvg{
+ width: 20px;
+ height: 20px; 
+}
+.clouseText{ 
+ color: rgba(255, 255, 255, 1);
+}
