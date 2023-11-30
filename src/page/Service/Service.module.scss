@@ -1,0 +1,92 @@
+@import '../../vars.scss';
+
+%textTitle{ 
+ font-size: 28px;
+ font-family: $title-fonts;
+ text-align: start;
+ text-transform: uppercase;
+}
+
+.ulService{
+ @extend %grid-templ;
+ padding-top: 36px;
+}
+
+.Title{
+ padding-top: 36px;
+ @extend %textTitle
+}
+.text{
+ padding-top: 24px;
+ text-align: justify;
+}
+
+.liOpportunities{ 
+ background-color: rgba(234, 237, 241, 1);
+}
+.containetTitleOpportunities{ 
+ padding: 13px 12px;
+ width: 124px;
+ div{
+  display: flex;
+  padding-bottom: 33px;
+  border-bottom: 1px solid $text-bright-color;
+ }
+ h3{ 
+  font-family: $title-fonts;
+  text-align:center;
+  align-items: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+ }
+ img{ 
+  width: 16px;
+  height: 16px;
+  padding: 4px 8px 4px 0px;
+ }
+ p{ 
+  padding-top: 12px;
+  font-size: 14px;
+  text-align: start;
+  height: 100%;
+ }
+}
+.titleValue{ 
+ @extend %textTitle;
+ padding-top: 36px;
+}
+.valueText{ 
+ position: relative;
+ 
+ font-family: $title-fonts;
+ font-size: 24px;
+ padding: 96px 0px;
+ span{ 
+  color: $text-bright-color;
+  font-size: 48px;
+ }
+
+ &::before, &::after{ 
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 48px;
+  border-left: 1px solid $text-bright-color;
+ }
+ &::before{ 
+  left: 50%;
+  top: 24px;
+ }
+ &::after{ 
+  right: 50%;
+  bottom: 24px;
+ }
+}
+.textValue{ 
+ padding-top: 24px;
+ font-family: $title-fonts;
+ font-size: 28px;
+ text-transform: uppercase;
+ padding-bottom: 24px;
+}

@@ -1,0 +1,33 @@
+@import '../../vars.scss';
+
+.Title{
+ padding-top: 36px;
+ font-size: 28px;
+ font-family: $title-fonts;
+ text-align: start;
+ text-transform: uppercase;
+ 
+}
+.text{
+ padding-top: 24px;
+ text-align: justify;
+ span{
+  text-transform: uppercase;
+  color: $text-bright-color
+ }
+}
+.ulEmploye{
+ @extend %grid-templ;
+ padding-top: 36px;
+}
+.liContainer{
+ width: 148px;
+ height: 219px;
+ text-align: start;
+ 
+}
+.nameEmploye{
+ font-size: 18px;
+ padding-top: 8px;
+}
+.poition{color: rgba(130, 131, 130, 1)}

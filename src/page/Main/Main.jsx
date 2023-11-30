@@ -22,7 +22,7 @@ const Main = () => {
             <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
             <p>office@ecosolution.com</p>
          </div>
-         <img src={img} alt="wind turbine clean energy" className={s.mainImg} />
+         <img src={img} alt="wind turbine clean energy" />
       </section>
    );
 };
