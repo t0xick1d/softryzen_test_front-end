@@ -12,7 +12,7 @@ import s from './Header.module.scss';
 const listNavMenu = ['Main', 'About', 'Service', 'Cases', 'FAQ', 'Customers', 'Contact Us'];
 
 const Header = () => {
-   const [switchHeaderMenu, setswitchHeadermenu] = useState(true);
+   const [switchHeaderMenu, setswitchHeadermenu] = useState(false);
    return (
       <div className={s.container}>
          <ReactLogo className={s.logo} />
