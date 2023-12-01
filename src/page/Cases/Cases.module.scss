@@ -24,3 +24,19 @@
  text-align: start;
  text-transform: uppercase;
 }
+@media screen and (min-width: $screen-tablet) {
+ .tabletStyle{ 
+   display: flex;
+   flex-direction: row-reverse;
+   padding-top: 40px;
+  }
+  .title{ 
+   width: 50%;
+   padding: 51px 29px;
+  }
+  .energyUl{ 
+   width: 50%;
+   padding: 0px;
+   
+  }
+}

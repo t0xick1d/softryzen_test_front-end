@@ -31,3 +31,27 @@
  padding-top: 8px;
 }
 .poition{color: rgba(130, 131, 130, 1)}
+@media screen and (min-width: $screen-tablet) {
+  .tabletStyle{ 
+   display: flex;
+   flex-direction: row-reverse;
+   padding-top: 100px;
+  }
+  .Title{ 
+   min-width: 50%;
+   border-left: 1px solid $text-bright-color;
+   padding: 0px;
+   padding-left: 11px;
+  }
+  .text{ 
+   width: 50%;
+   padding: 0px;
+   padding-right: 65px;
+  }
+  .ulEmploye{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: 1fr;
+   grid-column-gap: 24px;
+  }
+}

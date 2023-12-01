@@ -89,3 +89,19 @@
 .clouseText{ 
  color: rgba(255, 255, 255, 1);
 }
+.buttonGetIn{
+ display: none;
+}
+
+@media screen and (min-width: $screen-tablet) {
+  .buttonGetIn{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 140px;
+ height: 40px;
+ background-color: rgba(151, 210, 139, 1);
+ border-radius: 32px;
+ }
+  .buttonText{padding-right: 12px;}
+}

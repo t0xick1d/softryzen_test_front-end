@@ -17,7 +17,6 @@
   @extend %display-center;
   padding: 24px 0px;
   width: 100%;
-  border-bottom: 1px solid $text-bright-color;
 }
 .mainButton{
  display: flex;
@@ -44,5 +43,36 @@ border-radius: 100px;
   width: 100%;
   margin: 0px;
   margin-bottom: 8px;
+ }
+}
+.mainTablet{ 
+  border-bottom: 1px solid rgb(151, 210, 139);
+}
+.pTablet{ 
+ display: none;
+}
+@media screen and (min-width: $screen-tablet) {
+ .mainTitle, .mainText{ 
+  align-items: start;padding-top: 0px;
+ }
+ .mainTitle{
+  font-size: 48px;
+  letter-spacing: 0em;
+ }
+  .mainTablet{ 
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: 1fr;
+
+  }
+  .textAdress{
+   min-width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+  }
+  .pTablet{ 
+ display: block;
  }
 }

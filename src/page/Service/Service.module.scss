@@ -87,3 +87,24 @@
  text-transform: uppercase;
  padding-bottom: 24px;
 }
+@media screen and (min-width: $screen-tablet) {
+  .tabletStyle{ 
+   display: flex;
+   flex-direction: row;
+   padding-top: 100px;
+  }
+  .Title{ 
+   min-width: 50%;
+   border-right: 1px solid $text-bright-color;
+   padding: 0px;
+   padding-left: 11px;
+  }
+  .text{ 
+   width: 50%;
+   padding: 0px;
+   padding-left: 11px;
+  }
+  .titleValue{
+   text-align: center;
+  }
+ }
