@@ -1,0 +1,32 @@
+@import '../../vars.scss';
+.container{
+ 
+ margin-top: 36px;
+ border-top: 1px solid $text-bright-color;
+ padding-top: 24px;
+}
+.logoContainer{
+ display: flex;
+ justify-content: space-between;
+ button{ 
+  @extend  %display-center;
+  width:32px;
+  height: 32px;
+  background-color: $text-bright-color;
+  border-radius: 16px;
+ }
+}
+.social{
+ padding-top: 24px;
+ svg{ 
+  margin-right: 8px;
+ }
+}
+.adressC{
+ padding-top: 24px;
+ padding-bottom: 52px;
+ p{ 
+  font-style: normal;
+
+ }
+}

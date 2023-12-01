@@ -1,0 +1,49 @@
+@import '../../vars.scss';
+.container{padding-top: 36px;}
+.title{
+ letter-spacing: 0em;
+ font-size: 28px;
+ font-family: $title-fonts;
+ text-align: start;
+ text-transform: uppercase;
+ padding-bottom: 24px;
+}
+.itemQuestion{
+ padding-top: 16px;
+ display: flex;
+ flex-direction: row;
+ border-top: 1px solid $text-bright-color;
+ text-align: justify;
+ div{ 
+  width: 296px;
+ }
+ svg{ 
+  width: 16px;
+  height: 16px;
+  padding: 25px 8px 25px 0px;
+ }
+ 
+}
+.textMinus{
+ font-size: 18px;
+ padding-bottom: 16px;
+}
+.text{
+ width: 296px;
+ padding-bottom: 16px;
+}
+.secondTitle{ 
+ padding-top: 36px;
+ padding-bottom: 12px;
+}
+.buttonContactUs{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 0 auto;
+ width: 130px;
+ height: 40px;
+ background-color: rgba(151, 210, 139, 1);
+ border-radius: 32px;
+}
+.buttonText{padding-right: 12px;}

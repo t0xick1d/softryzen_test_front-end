@@ -1,0 +1,35 @@
+@import '../../vars.scss';
+.container{}
+.tittle{
+ @extend %textTitle;
+ padding-top: 36px;
+ padding-bottom: 24px;
+}
+.ulCustomers{
+ display: flex;
+ justify-content: space-between;
+ 
+}
+.itemCustomers{
+ width: 148px;
+ height: 116px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ background-color: rgba(234, 237, 241, 1);
+ h3{
+  padding-top: 16px;
+  padding-left: 16px;
+  font-weight: 300;
+  text-align: start;
+ }
+ img{
+  width: 120px;
+  height: 46px;
+  padding: 16px;
+ }
+ svg{ 
+  padding: 16px;
+ }
+ 
+}

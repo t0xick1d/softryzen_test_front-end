@@ -1,12 +1,5 @@
 @import '../../vars.scss';
 
-%textTitle{ 
- font-size: 28px;
- font-family: $title-fonts;
- text-align: start;
- text-transform: uppercase;
-}
-
 .ulService{
  @extend %grid-templ;
  padding-top: 36px;
@@ -84,6 +77,10 @@
  }
 }
 .textValue{ 
+ width: 145px;
+ margin: 0 auto;
+ align-items: center;
+ letter-spacing: 0em;
  padding-top: 24px;
  font-family: $title-fonts;
  font-size: 28px;

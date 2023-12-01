@@ -1,0 +1,26 @@
+@import '../../vars.scss';
+
+.title{
+ padding: 52px 18px;
+ background-color: rgba(234, 237, 241, 1);
+ font-family: $title-fonts;
+ font-size: 36px;
+ letter-spacing: 0em;
+ text-align: start;
+ text-transform: uppercase;
+}
+.energyUl{
+ @extend %display-center;
+ padding-top: 24px;
+ font-size: 20px;
+}
+.energyItem{
+ padding-bottom: 16px;
+}
+.secondTitle{
+ letter-spacing: 0em;
+ font-size: 28px;
+ font-family: $title-fonts;
+ text-align: start;
+ text-transform: uppercase;
+}

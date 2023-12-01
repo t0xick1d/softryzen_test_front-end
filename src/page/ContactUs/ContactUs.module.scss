@@ -1,0 +1,84 @@
+@import '../../vars.scss';
+.title{
+ @extend %textTitle;
+ @extend  %display-center;
+ padding-top: 36px;
+}
+.containerContact{
+ align-items: start;
+ h3{ 
+  padding-top: 24px;
+  padding-bottom: 8px;
+ }
+ h3, p{ 
+  text-align: start;
+  align-items: center;
+  font-style: normal;
+ }
+ p{
+  font-size: 20px;
+ }
+ svg{ 
+  margin-right: 8px;
+  align-items: center;
+ }
+
+}
+.phoneNumber{ 
+ display: flex;
+ padding-bottom: 12px;
+}
+.socialContainer{ 
+ div{ 
+ display: flex;
+}
+
+ svg{
+  padding: 12px;
+  margin-right: 8px;
+ }
+}
+.formContainer{ 
+ display: flex;
+ flex-direction: column;
+ padding: 36px 12px;
+ background-color: rgba(234, 237, 241, 1);
+ button{ 
+  margin-left: auto;
+ }
+}
+.labelContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 28px;
+  label{ 
+   padding-bottom: 8px;
+  }
+  input, textarea{ 
+   background:rgba(234, 237, 241, 1);
+   border-width: 0px;
+   border-bottom: 1px solid $text-bright-color;
+   min-width: 100%;
+  }
+  textarea{
+   height: 300px;
+  }}
+.buttonSubmit{
+ width: 100px;
+ height: 40px;
+ right: 0px;
+ border-radius: 20px;
+ border: 1px solid $text-bright-color;
+ display: flex;
+}
+.textButton{ 
+ padding: 11px 16px 11px 8px;
+}
+.containerSvg{
+ margin-top: 1px;
+  padding: 8px;
+  background: $text-bright-color;
+  border-radius: 16px;
+}
