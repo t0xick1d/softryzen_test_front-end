@@ -63,7 +63,7 @@
    min-width: 100%;
   }
   textarea{
-   height: 300px;
+   height: 147px;
   }}
 .buttonSubmit{
  width: 100px;
@@ -82,3 +82,12 @@
   background: $text-bright-color;
   border-radius: 16px;
 }
+@media screen and (min-width: $screen-tablet) {
+ .tabletContainer{ 
+   display: flex;
+  }
+  .containerContact,.formContainer{ 
+   margin-top: 40px;
+   width: 50%;
+  }
+} 

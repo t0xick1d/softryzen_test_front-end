@@ -6,7 +6,7 @@ import s from './Faq.module.scss';
 
 const Faq = () => {
    return (
-      <section className={s.container} id='FAQ'>
+      <section className={s.container} id="FAQ">
          <h2 className={s.title}>Frequently Asked Questions</h2>
          <div className={s.itemQuestion}>
             <Minus style={{ fill: 'rgba(23, 61, 51, 1)' }} />
@@ -53,11 +53,13 @@ const Faq = () => {
                renewable energy?
             </p>
          </div>
-         <h3 className={s.secondTitle}>Didn't find the answer to your question?</h3>
-         <button className={s.buttonContactUs}>
-            <p className={s.buttonText}>Contact Us</p>
-            <Ellipse />
-         </button>
+         <div className={s.tablet}>
+            <h3 className={s.secondTitle}>Didn't find the answer to your question?</h3>
+            <button className={s.buttonContactUs}>
+               <p className={s.buttonText}>Contact Us</p>
+               <Ellipse />
+            </button>
+         </div>
       </section>
    );
 };

@@ -10,7 +10,7 @@
  justify-content: space-between;
  
 }
-.itemCustomers{
+.itemCustomers,.itemCustomers2 {
  width: 148px;
  height: 116px;
  display: flex;
@@ -33,3 +33,10 @@
  }
  
 }
+.itemCustomers2{display: none;}
+@media screen and (min-width: $screen-tablet) {
+ .itemCustomers2{display: block;}
+ .itemCustomers,.itemCustomers2{ 
+  width: 159px;
+ }
+} 

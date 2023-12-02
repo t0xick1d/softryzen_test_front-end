@@ -1,9 +1,10 @@
 @import '../../vars.scss';
 .container{
- 
+ min-width: 95%;
  margin-top: 36px;
  border-top: 1px solid $text-bright-color;
  padding-top: 24px;
+ position: relative;
 }
 .logoContainer{
  display: flex;
@@ -30,3 +31,18 @@
 
  }
 }
+@media screen and (min-width: $screen-tablet) {
+.container{
+ padding: 24px 30px;
+}
+.social{
+ position: absolute;
+ margin: 0 auto;
+ top: 0;
+ left: 50%;
+}
+.adressC{
+ display: flex;
+ justify-content: space-between;
+}
+} 
