@@ -101,6 +101,7 @@
    padding-top: 100px;
   }
   .Title{ 
+   
    min-width: 50%;
    border-right: 1px solid $text-bright-color;
    padding: 0px;
@@ -115,6 +116,7 @@
    text-align: center;
   }
   .ulService{ 
+   padding-top: 100px;
    grid-template-rows: 1fr 1fr;
    grid-template-columns: 1fr 1fr 1fr 1fr;
    height: 100%;

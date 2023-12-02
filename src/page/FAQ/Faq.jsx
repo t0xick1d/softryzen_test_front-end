@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ReactComponent as Ellipse } from '../../img/ellipse.svg';
 import { ReactComponent as Minus } from '../../img/minus.svg';
 import { ReactComponent as Add } from '../../img/add.svg';
@@ -55,10 +56,10 @@ const Faq = () => {
          </div>
          <div className={s.tablet}>
             <h3 className={s.secondTitle}>Didn't find the answer to your question?</h3>
-            <button className={s.buttonContactUs}>
+            <Link to={`#Contact Us`} reloadDocument className={s.buttonContactUs}>
                <p className={s.buttonText}>Contact Us</p>
                <Ellipse />
-            </button>
+            </Link>
          </div>
       </section>
    );
