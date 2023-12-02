@@ -3,7 +3,7 @@ import s from './Cases.module.scss';
 
 const Cases = () => {
   return (
-     <section>
+     <section id='Cases'>
         <div className={s.tabletStyle}>
            <h2 className={s.title}>
               Development and implementation of renewable enviroMentally friendly energy sources

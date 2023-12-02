@@ -6,7 +6,7 @@ import s from './Faq.module.scss';
 
 const Faq = () => {
    return (
-      <section className={s.container}>
+      <section className={s.container} id='FAQ'>
          <h2 className={s.title}>Frequently Asked Questions</h2>
          <div className={s.itemQuestion}>
             <Minus style={{ fill: 'rgba(23, 61, 51, 1)' }} />

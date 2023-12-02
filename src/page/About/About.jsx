@@ -32,7 +32,7 @@ const About = () => {
 
 
    return (
-      <section className={s.container}>
+      <section className={s.container} id='About'>
          <div className={s.tabletStyle}>
             <h2 className={s.Title}>LET’s start with small start with ourselves</h2>
             <p className={s.text}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ReactComponent as ReactLogo } from '../../img/mainLogo.svg';
 import { ReactComponent as Arrow } from '../../img/footer/arrow-right.svg';
 import { ReactComponent as Facebook } from '../../img/footer/facebook.svg';
@@ -12,7 +13,9 @@ const Footer = () => {
          <div className={s.logoContainer}>
             <ReactLogo />
             <button>
-               <Arrow />
+               <Link to={'#Main'} reloadDocument>
+                  <Arrow />
+               </Link>
             </button>
          </div>
          <div className={s.social}>

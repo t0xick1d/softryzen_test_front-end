@@ -6,7 +6,7 @@ import s from './Main.module.scss';
 
 const Main = () => {
    return (
-      <section className={s.container}>
+      <section className={s.container} id='Main'>
          <div className={s.mainTablet}>
             <h1 className={s.mainTitle}>RENEWABLE ENERGY For any task</h1>
             <div>

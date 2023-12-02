@@ -7,6 +7,7 @@
 .container { 
  display: flex;
  justify-content: space-between;
+ position: relative;
 }
 .logo{
  width: 269px;
@@ -102,6 +103,7 @@
  height: 40px;
  background-color: rgba(151, 210, 139, 1);
  border-radius: 32px;
+ text-decoration: none;
  }
   .buttonText{padding-right: 12px;}
 }

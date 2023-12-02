@@ -87,6 +87,13 @@
  text-transform: uppercase;
  padding-bottom: 24px;
 }
+.imgGrid1{ 
+   grid-area: 1/3/2/5;
+  }
+
+  .imgGrid1,.imgGrid2{ 
+   display: none;
+  }
 @media screen and (min-width: $screen-tablet) {
   .tabletStyle{ 
    display: flex;
@@ -106,5 +113,20 @@
   }
   .titleValue{
    text-align: center;
+  }
+  .ulService{ 
+   grid-template-rows: 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   height: 100%;
+  }
+  
+  .imgGrid1{ 
+   display: block;
+   grid-area: 1/3/2/5;
+  }
+
+  .imgGrid2{ 
+   display: block;
+   grid-area: 2/1/3/3;
   }
  }

@@ -6,7 +6,7 @@ import s from './Costumers.module.scss';
 
 const Costumers = () => {
    return (
-      <section className={s.container}>
+      <section className={s.container} id="Customers">
          <h2 className={s.tittle}>our satisfied customers</h2>
          <ul className={s.ulCustomers}>
             <li className={s.itemCustomers} key="1">

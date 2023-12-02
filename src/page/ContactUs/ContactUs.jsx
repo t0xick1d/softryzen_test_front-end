@@ -11,7 +11,7 @@ import s from './ContactUs.module.scss';
 
 const ContactUs = () => {
    return (
-      <section className={s.container}>
+      <section className={s.container} id="Contact Us">
          <h2 className={s.title}>Contact us</h2>
          <div className={s.containerContact}>
             <div>

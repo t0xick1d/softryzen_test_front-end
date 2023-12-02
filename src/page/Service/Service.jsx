@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ServiceCard from './ServiceCard';
 
 import s from './Service.module.scss';
 
@@ -7,6 +7,9 @@ import circle from '../../img/maximize-circle.svg';
 import cpu from '../../img/cpu-charge.svg';
 import ranking from '../../img/ranking.svg';
 import edit from '../../img/global-edit.svg';
+
+import img from '../../img/service/Mask group (1).jpg';
+import img1 from '../../img/service/Mask group.jpg';
 
 const Service = () => {
    const dataOpportunities = [
@@ -32,7 +35,7 @@ const Service = () => {
       },
    ];
    return (
-      <section>
+      <section id="Service">
          <div className={s.tabletStyle}>
             <h2 className={s.Title}>Main values of our company</h2>
             <p className={s.text}>
@@ -41,21 +44,18 @@ const Service = () => {
                renewable energy, leading the way in innovative technologies that harness the power
                of nature to meet the world's energy needs.
             </p>
+            <img src="" alt="" />
          </div>
          <ul className={s.ulService}>
             {dataOpportunities.map((e, i) => {
-               return (
-                  <li key={i} className={s.liOpportunities}>
-                     <div className={s.containetTitleOpportunities}>
-                        <div>
-                           <img src={e.svg} alt="svg" />
-                           <h3>{e.title}</h3>
-                        </div>
-                        <p>{e.text}</p>
-                     </div>
-                  </li>
-               );
+               return <ServiceCard data={e} key={i} />;
             })}
+            <li className={s.imgGrid1}>
+               <img src={img1} alt="" />
+            </li>
+            <li className={s.imgGrid2}>
+               <img src={img} alt="" />
+            </li>
          </ul>
          <div>
             <h3 className={s.titleValue}>Electricity we produced for all time</h3>
