@@ -1,11 +1,14 @@
 @import '../../vars.scss';
 
-.Title{
+.containerTitle{
  padding-top: 36px;
- font-size: 28px;
  font-family: $title-fonts;
  text-align: start;
  text-transform: uppercase;
+ h2{ 
+  font-size: 28px;
+  font-weight: lighter;
+ }
  
 }
 .text{
@@ -37,11 +40,15 @@
    flex-direction: row-reverse;
    padding-top: 100px;
   }
-  .Title{ 
-   min-width: 50%;
+  .containerTitle{ 
+   font-size: 36px;
+   width: 50%;
    border-left: 1px solid $text-bright-color;
    padding: 0px;
    padding-left: 11px;
+    h2{ 
+    font-size: 36px;
+   }
   }
   .text{ 
    width: 50%;
@@ -55,3 +62,29 @@
    grid-column-gap: 24px;
   }
 }
+@media screen and (min-width: $screen-compucter) {
+ .containerTitle{
+  letter-spacing: 0em;
+  h2{ 
+    font-size: 48px;
+    padding-left: 161px;
+    line-height:1em;
+   }
+
+ } 
+ .liContainer{
+ width: 274px;
+ height: 353px; 
+ h3{ 
+  font-size: 20px;
+ }
+ p{
+  font-size: 16px;
+ }
+ img{ 
+  width: 274px;
+  height: 290px;
+ }
+ 
+}
+} 

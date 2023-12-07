@@ -5,9 +5,12 @@
  padding-top: 36px;
 }
 
-.Title{
+.containerTitle{
  padding-top: 36px;
- @extend %textTitle
+ h2{
+  @extend %textTitle
+ }
+
 }
 .text{
  padding-top: 24px;
@@ -100,12 +103,17 @@
    flex-direction: row;
    padding-top: 100px;
   }
-  .Title{ 
-   
+  
+  .containerTitle{ 
    min-width: 50%;
    border-right: 1px solid $text-bright-color;
    padding: 0px;
    padding-left: 11px;
+   h2{ 
+   font-size: 36px;
+    letter-spacing: 0em;
+    line-height:1em;
+   }
   }
   .text{ 
    width: 50%;
@@ -132,3 +140,31 @@
    grid-area: 2/1/3/3;
   }
  }
+ @media screen and (min-width: $screen-compucter) {
+  .titleValue{
+padding-top: 100px;
+  }  
+    .containerTitle{ 
+     h2{ 
+      word-spacing: 0%;
+      padding-right: 82px;
+      font-size: 48px;
+      font-weight: lighter;
+     }
+    }
+    .valueText{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 28px;
+     span{ 
+      font-size: 100px;
+      padding-right: 24px;
+     }
+    }
+    .textValue{ 
+     width: 248px;
+     font-size: 48px;
+    }
+
+ } 

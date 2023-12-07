@@ -6,10 +6,10 @@ import s from './Main.module.scss';
 
 const Main = () => {
    return (
-      <section className={s.container} id='Main'>
+      <section className={s.container} id="Main">
          <div className={s.mainTablet}>
             <h1 className={s.mainTitle}>RENEWABLE ENERGY For any task</h1>
-            <div>
+            <div className={s.containerMainText}>
                <p className={s.mainText}>
                   Development and implementation of renewable non-polluting energy sources,
                   generating power generation using energy wind, sun, water, biomass

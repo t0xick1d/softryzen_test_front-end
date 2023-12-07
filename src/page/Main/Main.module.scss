@@ -1,6 +1,5 @@
 @import '../../vars.scss';
 .container{
- @extend %display-center;
  padding-top: 146px;
 }
 .mainTitle{
@@ -24,11 +23,12 @@
  justify-content: center;
  width: 141px;
  height: 39px;
- border: 1px solid $text-bright-color;
+ outline: 1px solid $text-bright-color;
  border-radius: 500px;
 }
 .textButton{
- margin-right: 12px;
+ padding-left: 16px;
+ padding-right: 8px;
 }
 .svgButton{
 padding: 8px;
@@ -76,3 +76,16 @@ border-radius: 100px;
  display: block;
  }
 }
+@media screen and (min-width: $screen-compucter) {
+ .mainTablet{ 
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+ }
+ .containerButton{ 
+  align-items: start;
+ }
+ .containerMainText{ 
+  width: 363px;
+ }
+} 

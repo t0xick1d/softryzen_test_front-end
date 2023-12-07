@@ -40,3 +40,11 @@
   width: 159px;
  }
 } 
+ @media screen and (min-width: $screen-compucter) {
+  .itemCustomers,.itemCustomers2{ 
+  width: 274px;
+  img{
+   margin: 0 auto;
+  }
+ }
+ } 

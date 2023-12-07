@@ -32,9 +32,11 @@ const About = () => {
 
 
    return (
-      <section className={s.container} id='About'>
+      <section className={s.container} id="About">
          <div className={s.tabletStyle}>
-            <h2 className={s.Title}>LET’s start with small start with ourselves</h2>
+            <div className={s.containerTitle}>
+               <h2 className={s.Title}>LET’s start with small start with ourselves</h2>
+            </div>
             <p className={s.text}>
                <span>ECOSOLUTION</span> is the largest group of companies in Western Ukraine, which
                is engaged in the development and implementation of renewable environmentally

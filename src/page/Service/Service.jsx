@@ -37,7 +37,9 @@ const Service = () => {
    return (
       <section id="Service">
          <div className={s.tabletStyle}>
-            <h2 className={s.Title}>Main values of our company</h2>
+            <div className={s.containerTitle}>
+               <h2 className={s.Title}>Main values of our company</h2>
+            </div>
             <p className={s.text}>
                EcoSolution envisions a world where sustainable energy solutions power a brighter and
                cleaner future for all. We aspire to be at the forefront of the global shift towards
