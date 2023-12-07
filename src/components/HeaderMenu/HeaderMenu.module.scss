@@ -1,31 +1,4 @@
 @import '../../vars.scss';
-
-.container { 
- position: relative;
- display: flex;
- justify-content: space-between;
-}
-.logo{
- width: 269px;
- height: 40px;
-}
-.burgerMenuContainer{
- position: relative;
- @extend %display-center;
- width: 40px;
- height: 40px;
- & svg{
-  width: 16px;
-  height: 16px;
- }
- 
-}
-.burgerMenuSvg{ 
- position: relative;
- width: 16px;
- height: 16px;
-
-}
 .navMenu{ 
  position:absolute;
  top: 0%;
@@ -36,7 +9,6 @@
  background-color: rgba(23, 61, 51, 0.75);
  border-radius: 15px;
  backdrop-filter: blur(25px);
-
  display: flex;
  flex-direction: column;
  justify-content: space-between;
@@ -89,20 +61,4 @@
 }
 .buttonGetIn{
  display: none;
-}
-
-@media screen and (min-width: $screen-tablet) {
-  .buttonGetIn{
- display: flex;
- align-items: center;
- justify-content: center;
- text-decoration: none;
- color: $text-main-color;
- width: 140px;
- height: 40px;
- background-color: rgba(151, 210, 139, 1);
- border-radius: 32px;
- text-decoration: none;
- }
-  .buttonText{padding-right: 12px;}
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ServiceCard from './ServiceCard';
 
 import s from './Service.module.scss';
@@ -12,6 +12,8 @@ import img from '../../img/service/Mask group (1).jpg';
 import img1 from '../../img/service/Mask group.jpg';
 
 const Service = () => {
+   const [valueElectric, setValueElectric] = useState(1134147814);
+   const [valueInText, setValueInText] = useState('');
    const dataOpportunities = [
       {
          title: 'Openness',
@@ -34,6 +36,15 @@ const Service = () => {
          svg: ranking,
       },
    ];
+   useEffect(() => {
+      setValueInText(valueElectric.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.'));
+      const id = setInterval(() => setValueElectric((oldCount) => oldCount + 1), 1000);
+
+      return () => {
+         clearInterval(id);
+      };
+   }, [valueElectric]);
+
    return (
       <section id="Service">
          <div className={s.tabletStyle}>
@@ -62,7 +73,7 @@ const Service = () => {
          <div>
             <h3 className={s.titleValue}>Electricity we produced for all time</h3>
             <p className={s.valueText}>
-               <span>1.134.147.814</span> kWh
+               <span>{valueInText}</span> kWh
             </p>
             <p className={s.textValue}> The services we provide</p>
          </div>

@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
@@ -9,13 +10,23 @@ import FAQ from './page/FAQ/Faq';
 import Costumers from './page/Costumers/Costumers';
 import ContactUs from './page/ContactUs/ContactUs';
 
-import './App.scss';
+import s from './App.module.scss';
+import HeaderMenu from './components/HeaderMenu/HeaderMenu';
 
 function App() {
+   const [switchHeaderMenu, setSwitchHeadermenu] = useState(false);
    return (
-      <div className="App">
-         <div className="container">
-            <Header />
+      <div className={s.App}>
+         <div className={s.container}>
+            <Header switchHeaderMenu={switchHeaderMenu} setSwitchHeadermenu={setSwitchHeadermenu} />
+            {switchHeaderMenu ? (
+               <HeaderMenu
+                  switchHeaderMenu={switchHeaderMenu}
+                  setSwitchHeadermenu={setSwitchHeadermenu}
+               />
+            ) : (
+               ''
+            )}
             <Main />
             <About />
             <Service />
