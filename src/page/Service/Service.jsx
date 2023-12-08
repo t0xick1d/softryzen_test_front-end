@@ -61,7 +61,7 @@ const Service = () => {
          </div>
          <ul className={s.ulService}>
             {dataOpportunities.map((e, i) => {
-               return <ServiceCard data={e} key={i} />;
+               return <ServiceCard data={e} key={`${i}service`} />;
             })}
             <li className={s.imgGrid1}>
                <img src={img1} alt="" />

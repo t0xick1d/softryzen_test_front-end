@@ -51,12 +51,10 @@ const About = () => {
          <ul className={s.ulEmploye}>
             {dataStuff.map((e, i) => {
                return (
-                  <li key={i} className={s.liContainer}>
+                  <li key={`${i}about`} className={s.liContainer}>
                      <img src={e.img} alt="" />
                      <h3 className={s.nameEmploye}>{e.name}</h3>
-                     <p className={s.poition} s>
-                        {e.position}
-                     </p>
+                     <p className={s.poition}>{e.position}</p>
                   </li>
                );
             })}

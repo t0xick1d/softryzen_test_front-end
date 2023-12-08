@@ -24,13 +24,13 @@ const HeaderMenu = ({ switchHeaderMenu, setSwitchHeadermenu }) => {
                {listNavMenu.map((e, i) => {
                   return (
                      <li
-                        key={i}
+                        key={`${i}menu`}
                         onClick={(e) => {
                            setSwitchHeadermenu(!switchHeaderMenu);
                         }}
                      >
-                        <Link to={`#${e}`} reloadDocument>
-                           {e}
+                        <Link to={`#${e.trim(' ')}`} reloadDocument>
+                           {e.trim()}
                         </Link>
                         <Arrow />
                      </li>

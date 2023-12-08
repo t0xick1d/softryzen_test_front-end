@@ -1,5 +1,6 @@
 import React from 'react'
 import s from './Cases.module.scss';
+import Slider from '../../components/Slider/Slider';
 
 const Cases = () => {
   return (
@@ -17,6 +18,7 @@ const Cases = () => {
            </ul>
         </div>
         <h3 className={s.secondTitle}>Successful cases of our company</h3>
+        <Slider />
      </section>
   );
 }

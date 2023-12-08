@@ -20,7 +20,7 @@ const Header = ({ switchHeaderMenu, setSwitchHeadermenu }) => {
                <MenuBurger className={s.burgerMenuSvg} />
             </button>
             <button>
-               <Link to="#Contact Us" Us reloadDocument className={s.buttonGetIn}>
+               <Link to="#Contact Us" reloadDocument className={s.buttonGetIn}>
                   <p className={s.buttonText}>Get in toutch</p>
                   <Ellipse />
                </Link>

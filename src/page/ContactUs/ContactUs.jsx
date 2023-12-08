@@ -11,7 +11,7 @@ import s from './ContactUs.module.scss';
 
 const ContactUs = () => {
    return (
-      <section className={s.container} id="Contact Us">
+      <section className={s.container} id="ContactUs">
          <h2 className={s.title}>Contact us</h2>
          <div className={s.tabletContainer}>
             <div className={s.containerContact}>
@@ -50,44 +50,20 @@ const ContactUs = () => {
             </div>
             <form className={s.formContainer}>
                <div className={s.labelContainer}>
-                  <label for="name">Full name:</label>
-                  <input
-                     class="form__input"
-                     type="text"
-                     name="name"
-                     id="name"
-                     placeholder="John Rosie"
-                  />
+                  <label htmlFor="name">Full name:</label>
+                  <input type="text" name="name" id="name" placeholder="John Rosie" />
                </div>
                <div className={s.labelContainer}>
-                  <label for="email">E-mail:</label>
-                  <input
-                     class="form__input"
-                     type="email"
-                     name="email"
-                     id="email"
-                     placeholder="johnrosie@gmail.com"
-                  />
+                  <label htmlFor="email">E-mail:</label>
+                  <input type="email" name="email" id="email" placeholder="johnrosie@gmail.com" />
                </div>
                <div className={s.labelContainer}>
-                  <label for="phone">Phone:</label>
-                  <input
-                     class="form__input"
-                     type="number"
-                     name="name"
-                     id="name"
-                     placeholder="380961234567"
-                  />
+                  <label htmlFor="phone">Phone:</label>
+                  <input type="number" name="name" id="name" placeholder="380961234567" />
                </div>
                <div className={s.labelContainer}>
-                  <label for="message">Message:</label>
-                  <textarea
-                     class="form__input"
-                     type="text"
-                     name="message"
-                     id="name"
-                     placeholder="Your message"
-                  />
+                  <label htmlFor="message">Message:</label>
+                  <textarea type="text" name="message" id="name" placeholder="Your message" />
                </div>
                <button className={s.buttonSubmit} type="submit">
                   <div className={s.textButton}>Send</div>

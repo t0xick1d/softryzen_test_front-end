@@ -56,7 +56,7 @@ const Faq = () => {
          </div>
          <div className={s.tablet}>
             <h3 className={s.secondTitle}>Didn't find the answer to your question?</h3>
-            <Link to={`#Contact Us`} reloadDocument className={s.buttonContactUs}>
+            <Link to={`#Contac Us`} reloadDocument className={s.buttonContactUs}>
                <p className={s.buttonText}>Contact Us</p>
                <Ellipse />
             </Link>
