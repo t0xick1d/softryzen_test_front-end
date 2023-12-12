@@ -1,15 +1,84 @@
-.each-slide-effect > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  width: 300px;
-  height: 200px;
+@import '../../vars.scss';
+.container{ 
+  width: 365px;
+
+}
+.slidereffect{ 
+ width: 100%;
+ display: flex;
+ overflow-y: hidden;
+ overflow:scroll;
+ margin-top: 40px;
+ &::-webkit-scrollbar { width: 0 !important }
 }
 
-.each-slide-effect span {
-  padding: 20px;
-  font-size: 20px;
-  background: #efefef;
-  text-align: center;
+.eachSlideEffect{
+ background-color: rgba(234, 237, 241, 1);
+ width: 320px;
+ height: 318px;
+ margin: 0px 24px;
+  
+}
+.currentImg{
+ color: rgba(23, 61, 51, 0.25);
+ font-size: 28px;
+ font-weight: lighter;
+ span{ 
+  color: $text-main-color
+ }
+}
+.containerCountButton{ 
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+}
+
+.buttonContainer{ 
+display: flex;
+align-items: center;
+justify-content: center;
+ :first-child{ 
+   margin-right: 12px;
+ }
+}
+.buttonSvg{ 
+ width: 66px;
+ height: 66px;
+ border: 1px solid $text-main-color;
+ border-radius: 33px;
+}
+.titleContainer{  
+ display: flex;
+ justify-content: space-between;
+ padding: 24px 12px ;
+ border-bottom: 1px solid rgba(151, 210, 139, 1);
+ h3{ 
+  max-width: 357px;
+  font-size: 18px;
+  text-align: start;
+ }
+ svg{ 
+  padding: 16px;
+  background-color: rgba(151, 210, 139, 1);
+  border-radius: 30px;
+ }
+}
+.textContainer{ 
+ display: flex;
+ justify-content: space-between;
+ p{ 
+  font-size: 12px;
+  padding: 12px;
+ }
+}
+
+@media screen and (min-width: $screen-tablet) {
+  .container {
+    min-width:  $screen-tablet;
+  }
+}
+@media screen and (min-width: $screen-compucter) {
+  .container {
+    min-width: $screen-compucter;
+  }
 }
